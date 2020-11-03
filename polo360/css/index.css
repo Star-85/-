@@ -1,0 +1,342 @@
+/*
+ 在这里编辑主页的样式
+ */
+/*
+ 设置body样式
+ */
+body{
+  /*设置背景图片，水平方向重复*/
+  background: url(../img/bg.png) repeat-x;
+}
+/*解决高度塌陷的问题*/
+.clearfix:before,
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix{
+  zoom:1;
+}
+/*
+  固定元素的宽度和居中
+*/
+.w {
+  width: 940px;
+  margin: 0 auto;
+}
+/*设置header的定位*/
+.header{
+  /*设置上内边距*/
+  padding-top: 37px;
+  /*设置下内边距*/
+  padding-bottom: 46px;
+  /*background-color: #bfa;*/
+
+}
+/*
+  设置logo的位置
+*/
+.logo{
+  margin-left: 15px;
+}
+/*设置nav向右浮动*/
+.nav{
+  float:right;
+}
+/*设置li向左浮动*/
+.nav li{
+  float: left;
+  /*设置li的左右内边距*/
+  padding: 0 10px 8px;
+  /*设置边框*/
+  border-left: 1px #d6d6d6 dotted;
+}
+/*设置导航条中的超链接样式*/
+.nav a{
+  /*设置字体颜色*/
+  color: #666;
+  /*字体样式*/
+  font: bold 14px Georgia;
+  /*去除下划线*/
+  text-decoration: none;
+}
+/*设置超链接的移入效果*/
+.nav a:hover{
+  color: #a0a0a0;
+  text-decoration: underline;
+}
+/*设置小标题*/
+.nav p{
+  /*设置字体样式*/
+  font: 11px Tahoma;
+  /*字体颜色*/
+  color: #b7b7b7;
+}
+/*设置nav向下一点*/
+ul{
+  margin-top: 22px;
+}
+/*设置banner样式*/
+.banner{
+  /*设置高度*/
+  height: 356px;
+  /*设置背景阴影*/
+  background: url(../img/banner-bg.png) no-repeat bottom center;
+  position: relative;
+
+}
+/*给导航按钮定位*/
+.pointDiv{
+  position: absolute;
+  top: 314px;
+  left: 15px;
+}
+/*设置导航按钮的样式*/
+.pointDiv a{
+  float: left;
+  width: 17px;
+  height: 17px;
+  margin-left: 4px;
+  background:url(../img/sprite1.png) no-repeat ;
+}
+/*设置超链接的hover和选中的状态*/
+.pointDiv .active ,
+.pointDiv a:hover{
+  background:url(../img/sprite1.png) no-repeat -30px 0px ;
+}
+/*设置content*/
+.content h1{
+  color: #000;
+  font:bold 24px Georgia ;
+  /*设置文本居中*/
+  text-align: center;
+  /*设置上内边距*/
+  padding-top: 6px;
+  background:url(../img/content-bg.png) no-repeat bottom center;
+  /*设置下内边距，让底部阴影线往下移*/
+  padding-bottom: 20px;
+  /*设置下外边距*/
+  margin-bottom: 38px;
+}
+
+/*设置content中div样式*/
+.content .pl, .content .cs, .content .uc,
+.contact .sc, .contact .co, .contact .nu
+{
+  /*设置向左浮动*/
+  float: left;
+  width: 300px;
+
+}
+.contact .sc, .contact .co, .contact .nu{
+  /*height: 800px;*/
+  /*background-color: #bfa;*/
+}
+.content .cs, .contact .co{
+  margin: 0 20px;
+}
+/*设置标题的样式*/
+.content h2{
+  color: #11719e;
+  font:21px Georgia ;
+}
+/*设置小标题样式*/
+.pl,.cs,.uc p{
+  color: #8c8c8c;
+  font: 12px Helvetica;
+}
+/*设置图片背景*/
+.imgContainer{
+  background: url(../img/content-divbg.png) no-repeat;
+  height: 190px;
+  width: 299px;
+  margin: 16px 0px 10px 0px;
+  text-align: center;
+  padding-top: 12px;
+}
+/*设置文字所占区域宽高*/
+.des{
+  width: 299px;
+  height: 92px;
+}
+/*设置文字样式*/
+.des p{
+  color: #3e3e3e;
+  font: 13px Helvetica;
+}
+/*设置超链接的样式*/
+.content .lm{
+  display: block;
+  width: 163px;
+  height: 40px;
+  color: #016999;
+  font: 12px/40px Helvetica;
+  background: url(../img/sprite1.png) no-repeat 0px -30px;
+  text-indent: 1em;
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+/*设置超链接的hover*/
+.content .lm:hover{
+  width: 163px;
+  height: 40px;
+  background: url(../img/sprite1.png) no-repeat 0px -80px;
+  color: white;
+  line-height: 35px;
+}
+/*中间栏开始*/
+/*设置顶部的line*/
+.contact{
+  background: url(../img/content-bg.png) no-repeat top center ;
+}
+/*设置中间栏文本框样式*/
+.contact .txt{
+  width: 276px;
+  height: 33px;
+  line-height: 33px;
+  background: url(../img/sprite1.png) no-repeat 0px -130px;
+  /*去除默认的边框*/
+  border: none;
+  /*padding: 16px 0px;*/
+  /*去除浏览器默认的内边距*/
+  padding: 0px 10px;
+  /*设置下外边距*/
+  margin: 0px 0px 16px;
+}
+.contact textarea{
+  width: 276px;
+  height: 114px;
+  background: url(../img/textarea.png) no-repeat;
+  /*去除默认的边框*/
+  border:none;
+  /*去除ie浏览器自带的滚动条*/
+  overflow: auto;
+  /*设置文本域不能调整大小*/
+  resize: none;
+  /*去除浏览器默认的内外边距*/
+  padding:  10px;
+  margin: 0px;
+}
+/*设置按钮样式*/
+.contact .sd{
+  width: 163px;
+  height: 32px;
+  background: url(../img/sprite1.png) no-repeat 0px -80px;
+  border: none;
+  /*去除浏览器默认的内外边距*/
+  padding: 0px;
+  /*设置上外边距*/
+  margin: 11px 0px 23px;
+  /*设置文字样式*/
+  font: 13px Georgia;
+  color: #fff;
+  line-height: 32px;
+  text-align: left;
+  text-indent: 1em;
+  /*设置鼠标移入按钮时样式*/
+  cursor: pointer;
+}
+
+/*设置contact标题样式*/
+.contact h2{
+  font: 18px Georgia;
+  color: #444444;
+  padding:43px 0 10px 0px;
+
+  /*设置下边框*/
+  border-bottom: 1px dashed #a0a0a0;
+  /*设置下外边距*/
+  margin-bottom: 15px;
+}
+/*中间栏结束*/
+/*设置p标签样式*/
+.contact p{
+  font: 12px Helvetica;
+  color: #444;
+}
+/*设置副标题样式*/
+.sc h3{
+  font:bold 16px Gill Sans MT;
+  color: #444;
+  /*设置下边框*/
+  border-bottom: 1px dashed #a0a0a0;
+  padding-bottom: 8px;
+  margin-bottom: 7px;
+}
+.logoList{
+  margin: 0px;
+  padding:10px 0px 35px;
+}
+/*设置图标样式*/
+.logoList img{
+  float: left;
+  width: 52px;
+  height: 50px;
+  padding-left: 9px;
+}
+.logoList .img1{
+  padding-left: 0px;
+}
+/*设置输入框样式*/
+.sc .txt1{
+  width: 276px;
+  height: 33px;
+  line-height: 33px;
+  background: url(../img/input.png) no-repeat;
+  /*去除默认的边框*/
+  border: none;
+  padding: 0px 10px;
+  margin: 13px 0px 0px;
+}
+/*左边栏结束*/
+/*右边栏开始*/
+.nu img{
+  float: left;
+  margin-right: 8px;
+}
+.nu p{
+  color: #444444;
+  font:  12px Helvetica;
+  height: 58px;
+  border-bottom: 1px dashed #d3d3d3;
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+}
+/*去除最后一行的margin*/
+.nu .no-margin{
+  margin-bottom: 0px;
+}
+/*footer开始*/
+
+/*设置底部*/
+.footer{
+  height: 173px;
+  background-color: #333;
+  border-top: 10px solid #4c4c4c;
+}
+/*设置文字样式*/
+.footer a,p{
+  font: 11px Helvetica;
+  color: #999;
+  text-decoration: none;
+}
+/*设置底部链接鼠标移入的效果*/
+.footer a:hover{
+  color: #11719e;
+  text-decoration: underline;
+}
+.footer p{
+  margin-left: 8px;
+  margin-right: 23px;
+  margin-bottom: 6px;
+}
+.footer .copy{
+  float: right;
+  /*处理IE6双倍边距问题，目前好像没有这个bug*/
+  /*display:inline;*/
+}
+.footer .w{
+  padding-top: 18px;
+
+}
