@@ -1,0 +1,24 @@
+/* 公共样式 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+.body{
+    font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333333;
+    /* background-color: #fff; */
+    min-width:  1226px;
+}
+/* 设置一个类来表示中间容器的宽度 */
+.w{
+    /* 固容器的宽度 */
+   width: 1226px;
+   /* 设置容器居中显示 */
+   margin: 0 auto;
+}
+/* 去除超链接的下划线 */
+.topbar a{
+text-decoration: none;
+}
